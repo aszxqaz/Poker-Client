@@ -1,0 +1,7 @@
+.chakra-portal:has(>.chakra-popover__popper) {
+  z-index: calc(var(--chakra-zIndices-modal) + 1);
+}
+
+.chakra-portal {
+  z-index: -1;
+}

@@ -1,0 +1,41 @@
+@import './styles/fonts';
+
+:root {
+  --board-column-gap: 2vw;
+  --board-padding-inline: 2vw;
+  --card-width: calc(
+    (
+        100vw - var(--board-column-gap, 2vw) * 4 -
+          var(--board-padding-inline, 2vw) * 2
+      ) / 5
+  );
+  
+
+  --board-rank-color: hsl(120, 10%, 20%);
+  --linear-gradient-spades: linear-gradient(to right bottom, hsl(0, 0%, 1%), hsl(0, 0%, 6%));
+  --linear-gradient-hearts: linear-gradient(to right bottom, hsl(0, 93%, 40%), hsl(0, 93%, 50%));
+  --linear-gradient-diamonds: linear-gradient(to right bottom, hsl(0, 93%, 40%), hsl(0, 93%, 50%));
+  --linear-gradient-clubs: linear-gradient(to right bottom, hsl(238, 92%, 8%), hsl(238, 92%, 18%));
+  --chakra-colors-chakra-body-bg: var(--chakra-colors-gray-800);
+  --chakra-colors-chakra-body-bg: var(--chakra-colors-gray-800);
+    --chakra-colors-chakra-border-color: var(--chakra-colors-whiteAlpha-300);
+    --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-700);
+    --chakra-colors-chakra-placeholder-color: var(--chakra-colors-whiteAlpha-400);
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chakra-portal:has(>.chakra-popover__popper) {
+  z-index: calc(var(--chakra-zIndices-modal) + 1);
+}

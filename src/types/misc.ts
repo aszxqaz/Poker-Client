@@ -1,0 +1,5 @@
+export type TourneyState = 'REGISTERING' | 'IN_PROGRESS' | 'FINISHED'
+export type TableState = 'ACTIVE' | 'PENDING' | 'PAUSED'
+export type TableType = 'CASH' | 'TOURNEY'
+export type TourneyType = 'MTT' | 'SNG' | 'SPIN'
+export type Speed = 'REGULAR' | 'TURBO' | 'HYPER' | 'ULTRA'

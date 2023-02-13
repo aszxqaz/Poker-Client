@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'card-rank';
+  src:
+    url('./fonts/card-rank.ttf?f2jf60') format('truetype'),
+    url('./fonts/card-rank.woff?f2jf60') format('woff'),
+    url('./fonts/card-rank.svg?f2jf60#card-rank') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
+}
+
+i[class*="card-rank"] {
+  font-family: 'card-rank' !important;
+  background-image: var(--linear-gradient-rank);
+  // background-color: black;
+}
+
+.card-rank-0:before {
+  content: "\e900";
+}
+.card-rank-1:before {
+  content: "\e901";
+}
+.card-rank-2:before {
+  content: "\e902";
+}
+.card-rank-3:before {
+  content: "\e903";
+}
+.card-rank-4:before {
+  content: "\e904";
+}
+.card-rank-5:before {
+  content: "\e905";
+}
+.card-rank-6:before {
+  content: "\e906";
+}
+.card-rank-7:before {
+  content: "\e907";
+}
+.card-rank-8:before {
+  content: "\e908";
+}
+.card-rank-9:before {
+  content: "\e909";
+}
+.card-rank-10:before {
+  content: "\e90a";
+}
+.card-rank-11:before {
+  content: "\e90b";
+}
+.card-rank-12:before {
+  content: "\e90c";
+}
+

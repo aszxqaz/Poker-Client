@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'card-suit';
+  src:
+    url('./fonts/card-suit.ttf?wk8b9q') format('truetype'),
+    url('./fonts/card-suit.woff?wk8b9q') format('woff'),
+    url('./fonts/card-suit.svg?wk8b9q#card-suit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i[class*="card-suit"] {
+  font-family: 'card-suit' !important;
+  background-image: var(--linear-gradient-suit);
+}
+
+i.card-suit-0:before {
+  content: "\e90d";
+}
+i.card-suit-1:before {
+  content: "\e90e";
+}
+i.card-suit-2:before {
+  content: "\e90f";
+}
+i.card-suit-3:before {
+  content: "\e910";
+}
